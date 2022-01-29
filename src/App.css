@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgb(243, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title > h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+.title > .underline {
+  margin: auto;
+  height: 0.2rem;
+  width: 4.4rem;
+  background-color: cyan;
+}
+.reviews-container {
+  position: relative;
+  margin: 3rem;
+  width: 60%;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.person-img {
+  position: relative;
+  margin: 1rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.job {
+  font-size: 1rem;
+  color: rgb(75, 188, 226);
+}
+.para {
+  font-size: 0.6rem;
+  padding: 1.3rem;
+  line-height: 1rem;
+}
+
+.left-btn,
+.right-btn {
+  margin: 0.4rem;
+  font-size: 1.3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  outline: none;
+  color: rgb(75, 188, 226);
+  background: none;
+  cursor: pointer;
+  line-height: 1rem;
+  padding: 0.2rem;
+}
+.random-btn {
+  border: none;
+  outline: none;
+  background: rgb(131, 236, 236);
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.left-btn:hover {
   color: white;
+  background: rgb(131, 236, 236);
 }
-
-.App-link {
-  color: #61dafb;
+.right-btn:hover {
+  color: white;
+  background: rgb(131, 236, 236);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.random-btn:hover {
+  color: rgb(218, 25, 134);
+  opacity: 0.8;
 }
